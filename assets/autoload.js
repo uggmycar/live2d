@@ -5,7 +5,7 @@ const waifu_css=live2d_path + "assets/waifu.min.css";
 //waifu-tips.min.js
 const waifu_tips=live2d_path + "assets/waifu-tips.min.js";
 //live2d.min.js
-const live2d_js=live2d_path + "assets/live2d.min.js";
+const live2d_js=live2d_path + "assets/live2d.js";
 //waifu-json
 const waifu_json=live2d_path + "assets/waifu-tips.json";
 
