@@ -1,5 +1,5 @@
 // 注意：live2d_path 参数应使用自己的接口
-const live2d_path = "https://cdn.jsdelivr.net/gh/uggmycar/lived2d@latest/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/uggmycar/live2d@latest/";
 //waifu.min.css
 const waifu_css=live2d_path + "assets/waifu.min.css";
 //waifu-tips.min.js
