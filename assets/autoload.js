@@ -21,28 +21,11 @@ try {
     $("<link>").attr({href: waifu_css, 	<!---->
 	
 	rel: "stylesheet", type: "text/css"}).appendTo('head');
-    $('body').append('
-	<div class="waifu">
-	<div class="waifu-tips">
-	
-	</div>
-	<canvas id="live2d" class="live2d"></canvas>
-	<div class="waifu-tool">
-	
-	<span class="fui-home"></span> 
-	<span class="fui-chat"></span> 
-	<span class="fui-eye"></span> 
-	<span class="fui-user"></span> 
-	<span class="fui-photo"></span> 
-	<span class="fui-info-circle"></span> 
-	<span class="fui-cross"></span>
-	
-	</div>
-	</div>');
+    $('body').append(
+	'<div class="waifu"><div class="waifu-tips"></div><canvas id="live2d" class="live2d"></canvas><div class="waifu-tool"><span class="fui-home"></span><span class="fui-chat"></span><span class="fui-eye"></span><span class="fui-user"></span><span class="fui-photo"></span><span class="fui-info-circle"></span><span class="fui-cross"></span></div></div>');
     $.ajax
-	({url: waifu_tips ,				<!---->
-	
-	 dataType:"script", cache: true, success: function() {
+	({url: waifu_css 
+	,dataType:"script", cache: true, success: function() {
 		 
         $.ajax({url: live2d_js, 		<!---->
 		
@@ -71,4 +54,4 @@ try {
     }});
 	 }});
 	  }});
-} catch(err) { console.log("[Error] JQuery is not defined.") }
+} catch(err) { console.log(err+"[Error] JQuery is not defined.") }
